@@ -4,7 +4,7 @@ project(http LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt5 REQUIRED COMPONENTS Core Network)
+find_package(Qt6 REQUIRED COMPONENTS Core Network)
 
 add_library(http
 	src/cachedhttp.h
@@ -22,4 +22,4 @@ add_library(http
 	src/throttledhttp.cpp
 )
 
-target_link_libraries(http Qt5::Network)
+target_link_libraries(http Qt6::Network)
